@@ -7,6 +7,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     man-db \
     manpages \
     manpages-ja \
+    nkf \
     openssh-client \
     vim \
  && locale-gen ja_JP.UTF-8 \
