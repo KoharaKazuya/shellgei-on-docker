@@ -1,6 +1,7 @@
 FROM buildpack-deps:jessie-curl
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
+    bc \
     git \
     less \
     locales \
@@ -9,6 +10,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     manpages-ja \
     nkf \
     openssh-client \
+    rs \
     vim \
  && locale-gen ja_JP.UTF-8 \
  && localedef -f UTF-8 -i ja_JP ja_JP \
